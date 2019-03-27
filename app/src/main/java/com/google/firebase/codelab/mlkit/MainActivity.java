@@ -85,6 +85,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     // Max height (portrait mode)
     private Integer mImageMaxHeight;
     /**
+     * An instance of the driver class to run model inference with Firebase.
+     */
+    private FirebaseModelInterpreter mInterpreter;
+    /**
+     * Data configuration of input & output data of model.
+     */
+    private FirebaseModelInputOutputOptions mDataOptions;
+    /**
      * Name of the model file hosted with Firebase.
      */
     private static final String HOSTED_MODEL_NAME = "cloud_model_1";
